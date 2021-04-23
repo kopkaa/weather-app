@@ -34,6 +34,13 @@ export default new Vuex.Store({
           });
       });
   	},
+
+    loadByLocation({ commit, dispatch }, position) {
+      axios.get(`http://api.openweathermap.org/geo/1.0/reverse?lat=${position.coords.latitude}&lon=${position.coords.longitude}&limit=20&appid=54c6208e65525722577789e191782281`)
+        .then((res) => {
+          dispatch('loadWeather', res.data[0].name);
+        });
+  	},
   },
   modules: {
   },
