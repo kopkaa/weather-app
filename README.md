@@ -1,24 +1,14 @@
 # weather-app
 
+Project is using OpenWeatherMap API, Vue 2 with composition API, Typescript and Vuex
 ## Project setup
+Install dependencies first
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+Run local development enviroment
 ```
 yarn serve
 ```
 
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
